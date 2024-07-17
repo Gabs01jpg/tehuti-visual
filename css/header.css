@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* estilo do cabeçalho */
+
+#navbar-header {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* fim estilho cabeçalho */

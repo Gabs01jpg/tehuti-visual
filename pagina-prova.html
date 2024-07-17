@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulado Tehuti</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagina-prova.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body style="background-color: #0b0c10;">
+
+    <!-- header ou cabeçalho -->
+    <header>
+      <!-- navbar principal do cabeçalho -->
+      <nav class="navbar navbar-expand-lg navbar-dark py-5"
+          style="font-family: 'Inter', sans-serif; background-color: #0b0c10"
+          id="navbar-header">
+          <!-- imagem logotipo tehuti -->
+          <a class="navbar-brand" href="index.html"><img
+                  src="imagens/logotipo.png" alt
+                  style="height: 35px;"></a>
+          <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"
+              id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="CriarProva.html">Novo
+                          Simulado<span
+                              class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <!-- link nosso projeto -->
+                      <a class="nav-link"
+                          href="index.html#nossoprojeto">Nosso Projeto</a>
+                  </li>
+                  <li class="nav-item">
+                      <!-- link area do usuario -->
+                      <a class="nav-link" href="area-usuario.html">Área do
+                          Usuário</a>
+                  </li>
+                  <li class="nav-item">
+                      <!-- link seja premium -->
+                      <a class="nav-link" href="seja-premium.html">Seja
+                          Premium</a>
+                  </li>
+              </ul>
+              <!-- botões entrar cadastrar -->
+              <section class="login-cadastrar">
+                  <a href="#" id="loginLink"><button
+                          class="btn-entrar btn my-2 my-sm-0"
+                          style="background-color: #1f2833; color: white; font-weight: bold;">Entrar</button></a>
+                  <a href="cadastro.html"><button
+                          class="btn-cadastrar btn my-2 my-sm-0"
+                          style="background-color: #1f2833; color: white; font-weight: bold;">Cadastrar</button></a>
+              </section>
+          </div>
+      </nav>
+  </header>
+    <!-- fim do header ou cabeçalho -->
+
+    <!--  Parte principal - questões, enunciados e alternativas -->
+    <main class="main-principal">
+      <!--  Pop Up do login-->
+      <div id="mainLogin" data-bs-theme="dark">
+            <section id="login">
+              <fieldset>
+                <h4 class="caixas">Login</h4>
+                <label for="email">
+                  <input type="email" name="email" id="email" placeholder="digite seu email" class="input-login"/>
+                </label>
+                <br /><br />
+                <label for="senha">
+                  <input type="password" name="senha" id="senha" placeholder="digite sua senha" class="input-login"/>
+                </label>
+                <br /><br />
+                <div class="conteudo-entre-campos">
+                  <div class="senha">
+                    <input type="checkbox" id="meuCheckbox" />
+                    <label for="meuCheckbox" id="meuLembrar">Lembrar senha</label>
+                    <a href="redSenha.php">Esqueceu sua senha ?</a>
+                  </div>
+                </div>
+                <br />
+                <input type="button" id="btnEntrar" value="Entrar" class="button-login"/>
+                <br />
+                <span>ou</span>
+                <br />
+                <input type="button" id="btnGoogle" value="Entrar com Google" class="button-google"/>
+              </fieldset>
+            </section>
+          </div>
+          <!-- final do pop-up -->
+        <div class="div-conteudo">
+            <!-- campo da questão 1-->
+            <div class="div-questoes">
+              <div class="numero-questoes">Questão 1</div>
+              <!-- tabela do conteudo da questão -->
+              <table class="tabela-enunciado-alternativas">
+                  <div class="enunciado">Um carro gasta 14 litros de gasolina para fazer um
+                    percurso de 154 quilômetros. Nessas condições, para
+                    percorrer 429 quilômetros, o carro gastará, em litros,
+                    uma quantidade de gasolina igual a:
+                    </div>
+                  <div id="alternativas-espacos">
+                      
+                  <thead>
+                      <tr>
+                      <th scope="col" colspan="2"></th>
+                      </tr>
+                  </thead>
+                  <div style="width: 100%; height: 100%; padding-left: 3%;">
+                      <tr>
+                          <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-a" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-A"></th>
+                          <td>33</td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-b" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-B"></th>
+                          <td>34</td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-c" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-C"></th>
+                          <td>36</td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-d" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-D"></th>
+                          <td>39</td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-e" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-E"></th>
+                          <td>42</td>
+                      </tr>
+                      
+                    </div>
+                  
+
+                </div>
+              </table>   
+              <!-- fim da tabela de conteudo das questões -->
+
+          </div>
+          <!-- fim questão 1 -->
+
+           <!-- inicio questao 2 -->
+          <div class="div-questoes">
+            <div class="numero-questoes">Questão 2</div>
+            <!-- tabela do conteudo da questão -->
+            <table class="tabela-enunciado-alternativas">
+                <div class="enunciado">Um técnico em edificações realizou um trabalho em
+                                      y dias, fazendo x horas por dia. Se trabalhasse duas
+                                      horas a mais por dia, teria terminado o serviço dois dias
+                                      antes, e se trabalhasse quatro horas a mais por dia,
+                                      teria terminado o serviço três dias antes. Os valores de
+                                      x e y são tais que:
+                  </div>
+                <div id="alternativas-espacos">
+                    
+                <thead>
+                    <tr>
+                    <th scope="col" colspan="2"></th>
+                    </tr>
+                </thead>
+                <div style="width: 100%; height: 100%; padding-left: 3%;">
+                    <tr>
+                        <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-a" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-A"></th>
+                        <td>y é o dobro de x</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-b" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-B"></th>
+                        <td>y é 1,5 de x.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-c" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-C"></th>
+                        <td>a sua diferença é 3.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-d" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-D"></th>
+                        <td>a sua soma é 9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-e" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-E"></th>
+                        <td>x é a terça parte de y.</td>
+                    </tr>
+                    
+                  </div>
+                
+                
+              </div>
+            </table>
+            <!-- fim da tabela de conteudo das questões -->
+        </div>
+        <!-- fim questao 2 -->
+
+         <!-- inicio questao 3 -->
+         <div class="div-questoes">
+          <div class="numero-questoes">Questão 3</div>
+          <!-- tabela do conteudo da questão -->
+          <table class="tabela-enunciado-alternativas">
+              <div class="enunciado">Uma pessoa, caminhando na pista de um parque,
+                                    percebe que existem marcas no chão mostrando as
+                                    posições medidas a partir do início da pista. A pessoa
+                                    constata que ela se encontra na posição da marca de
+                                    3 000 m, e que ela gastou 1 hora e 30 minutos para
+                                    atingir tal marca. A velocidade média da pessoa nesse
+                                    trecho, em km/h, vale:
+                </div>
+              <div id="alternativas-espacos">
+                  
+              <thead>
+                  <tr>
+                  <th scope="col" colspan="2"></th>
+                  </tr>
+              </thead>
+              <div style="width: 100%; height: 100%; padding-left: 3%;">
+                  <tr>
+                      <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-a" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-A"></th>
+                      <td>1,5.</td>
+                  </tr>
+                  <tr>
+                      <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-b" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-B"></th>
+                      <td>2,0. </td>
+                  </tr>
+                  <tr>
+                      <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-c" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-C"></th>
+                      <td>3,5.</td>
+                  </tr>
+                  <tr>
+                      <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-d" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-D"></th>
+                      <td>4,0.</td>
+                  </tr>
+                  <tr>
+                      <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-e" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-E"></th>
+                      <td>5,0.</td>
+                  </tr>
+                  
+                </div>
+              
+            </div>
+          </table>
+          <!-- fim da tabela de conteudo das questões -->
+      </div>
+      <!-- fim questao 3 -->
+
+       <!-- inicio questao 4 -->
+       <div class="div-questoes">
+        <div class="numero-questoes">Questão 4</div>
+        <!-- tabela do conteudo da questão -->
+        <table class="tabela-enunciado-alternativas">
+            <div class="enunciado">Um saco de cimento de 50 kg está no alto de um
+                                  prédio em construção a 30 m do solo. Sabendo que
+                                  a aceleração da gravidade local é de 10 m/s2
+                                  ,
+                                  podemos afirmar que a energia potencial do saco de
+                                  cimento em relação ao solo, em joule, vale:
+              
+              </div>
+            <div id="alternativas-espacos">
+                
+            <thead>
+                <tr>
+                <th scope="col" colspan="2"></th>
+                </tr>
+            </thead>
+            <div style="width: 100%; height: 100%; padding-left: 3%;">
+                <tr>
+                    <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-a" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-A"></th>
+                    <td>5 000. </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-b" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-B"></th>
+                    <td>10 000. </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-c" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-C"></th>
+                    <td>15 000.</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-d" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-D"></th>
+                    <td>20 000. </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-e" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-E"></th>
+                    <td>30 000. </td>
+                </tr>
+                
+              </div>
+          </div>
+        </table>
+        <!-- fim da tabela de conteudo das questões -->
+    </div>
+    <!-- fim questao 4 -->
+
+     <!-- inicio questao 5 -->
+     <div class="div-questoes">
+      <div class="numero-questoes">Questão 5</div>
+      <!-- tabela do conteudo da questão -->
+      <table class="tabela-enunciado-alternativas">
+          <div class="enunciado">Pirita (FeS2) é um mineral conhecido como “ouro
+            dos tolos” por ser amarelo e apresentar brilho
+            metálico semelhante ao do ouro (Au), embora não
+            seja um metal. Entretanto, é possível saber
+            facilmente se uma amostra é de ouro puro ou é de
+            pirita. Para isso, basta: <br>
+            I. determinar a massa; <br>
+            II. testar a condutibilidade elétrica; <br>
+            III. medir o volume. <br>
+            É correto o que se afirma em:
+            </div>
+          <div id="alternativas-espacos">
+              
+          <thead>
+              <tr>
+              <th scope="col" colspan="2"></th>
+              </tr>
+          </thead>
+          <div style="width: 100%; height: 100%; padding-left: 3%;">
+              <tr>
+                  <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-a" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-A"></th>
+                  <td>I, apenas. </td>
+              </tr>
+              <tr>
+                  <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-b" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-B"></th>
+                  <td>II, apenas. </td>
+              </tr>
+              <tr>
+                  <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-c" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-C"></th>
+                  <td>III, apenas. </td>
+              </tr>
+              <tr>
+                  <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-d" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-D"></th>
+                  <td>I e II, apenas. </td>
+              </tr>
+              <tr>
+                  <th scope="row" class="alternativa-nome"> <input type="radio" name="alternativa-input<?php echo $a ?>" id="Alternativa-e" class="input-alternativa" value="<?php echo $dados[$a - 1]['id']?>-E"></th>
+                  <td> I, II e III.</td>
+              </tr>
+              
+            </div>
+          
+        </div>
+      </table>
+      <!-- fim da tabela de conteudo das questões -->
+  </div>
+  <!-- fim questao 5 -->
+
+          
+
+            
+              
+            <div style="width: 100%; align-items: center; text-align: center;">
+              <a href="resultado.html"><input type="submit"  class="btn-entregar" value="Entregar Prova" id="btn-entregar-prova" ></a>
+            </div>
+            <!-- fim do campo da questão -->
+        </div>
+    </main>
+    <!-- fim da parte principal -->
+
+    <!--começo do footer-->
+    <footer class="footer-container">
+        <div class="email-social-container">
+           <div><p>Nosso contato: tehuti.educa@gmail.com</p></div>
+           <div></div>
+           <div><i class="fa-brands fa-x-twitter"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i></div>
+        </div>
+           <div style="border-top: solid white 1px; margin-bottom: 100px;">
+               <p style="color: white; align-items: center; display: flex; justify-content: center; margin-top: 50px;">© 2024 Tehuti</p>
+           </div>
+       </footer>
+      <!--final do footer-->
+  
+      <!--  Link to Bootstrap  -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+      <!--  Antes de chamar os script, importar as bibliotecas: -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <!-- aplicação -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+      <!-- autenticação -->
+      <script src="js/autenticacao_firebase/config.js"></script>
+      <script src="js/autenticacao_firebase/aplicationIndex.js"></script>
+      <script src="js/autenticacao_firebase/aplicationCadastro.js"></script>
+      <!--principal-->
+      <script src="js/index.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+  </html>
+    

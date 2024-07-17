@@ -1,0 +1,66 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0c10;
+    color: #fff;
+}
+
+.red-senha {
+    height: 60vh;
+    width: 80%;
+    max-width: 700px;
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #0b0c10;
+    background-color: #1f2833;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-cadastro {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #0b0c10;
+    padding: 0 20px;
+    align-items: flex-end;
+}
+
+.btnConfirmar {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .red-senha {
+        width: 90%;
+        margin: 10% 0;
+    }
+
+    .btnConfirmar {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .red-senha {
+        width: 95%;
+        margin: 15% 0;
+    }
+
+    .btnConfirmar {
+        width: 90%;
+    }
+}

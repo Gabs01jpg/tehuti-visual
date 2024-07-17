@@ -1,0 +1,27 @@
+.container {
+    margin-top: 10vi;
+}
+
+.section-conteudo {
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 22px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    margin-top: 150px;
+}
+
+.button-seja-premium {
+    height: 45px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border: 0px solid transparent;
+    background-color: #66fcf1;
+    line-height: 20%;
+}

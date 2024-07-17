@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+.contato {
+    background: linear-gradient(to bottom, #5BABF4 10%, #5BABF4 60%, #3679C9 100%);
+    height: 300px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.email h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rede-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10%;
+}
+
+.rede-social h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.rede-social ul {
+    display: flex;
+}
+
+.rede-social ul li {
+    margin-right: 10px;
+}
+
+.rede-social .icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+
+.rede-social .icon li {
+    margin-right: 10px;
+}
+
+.rede-social .icon li a {
+    font-size: 25px;
+}
+
+.rede-social .icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.rede-social .icon li {
+    margin-right: 10px;
+}
+
+.rede-social .icone-social {
+    font-size: 24px;
+}
+
+/* Estilos para ícone do Youtube */
+#icone-youtube {
+    color: red;
+}
+
+/* Estilos para ícone do Twitter */
+.rede-social .icone-twitter {
+    color: rgb(111, 111, 134);
+}
+
+/* Estilos para ícone do Facebook */
+.rede-social .icone-facebook {
+    color: #0451f7;
+}
+
+/* Estilos para ícone do Instagram */
+.rede-social .icone-instagram {
+    color: #c13584;
+}
+
+
+.rede-social .icon li a:hover {
+    color: #000000;
+}
+
+.footer-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3679C9;
+    color: #ffff;
+    height: 141px;
+}
+
+.footer-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-link i {
+    font-size: 20px;
+}
+
+
+/* Media query para ajustar o tamanho da fonte em dispositivos menores */
+@media only screen and (max-width: 200px) {
+    footer {
+        font-size: 4px;
+        flex-direction: column;
+        /* Muda para layout de coluna em dispositivos menores */
+        align-items: flex-start;
+        /* Alinha itens à esquerda */
+        width: 100%;
+    }
+}
+.footer-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #0b0c10;
+    
+}
+
+.email-social-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+footer div i {
+    margin-left: 10px;
+}

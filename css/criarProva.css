@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    font-family: 'Inter', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container {
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gerador {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.input-num {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #858585;
+    background-color: white;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-gerar {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 70px;
+    max-width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #66fcf1;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 1.25rem;
+    }
+
+    .checkbox-label {
+        font-size: 0.875rem;
+    }
+
+    .input-num,
+    .button-gerar {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .checkbox-label {
+        font-size: 0.75rem;
+    }
+
+    .input-num,
+    .button-gerar {
+        font-size: 0.75rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+}

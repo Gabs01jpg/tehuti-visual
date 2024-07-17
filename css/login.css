@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+#mainLogin {
+    width: 100%;
+    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.749);
+    top: 0;
+    left: 0;
+}
+
+label {
+    width: 100%;
+}
+
+#login {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    background-color: #1f2833;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: #fff;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+
+
+.input-login {
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: #0b0c10;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.button {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #0b0c10;
+}
+
+.button-login {
+    width: 80%;
+    height: 60px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #66fcf1;
+    color: #1f2833;
+}
+
+.button-google {
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: #0b0c10;
+    margin-bottom: 5%;
+}
+
+.button-fechar {
+    width: 9%;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    background-color: #3679C9;
+    color: #ffff;
+    margin-left: 90%;
+    text-align: center;
+    align-items: center;
+}
+
+.senha {
+    width: 100%;
+    font-size: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+#meuLembrar {
+    margin-right: 10%;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        font-size: 14px;
+        flex-direction: column;
+        /* Muda para layout de coluna em dispositivos menores */
+        align-items: flex-start;
+        /* Alinha itens à esquerda */
+    }
+}

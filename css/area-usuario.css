@@ -1,0 +1,157 @@
+.section-conteudo-area-usuario {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 14px;
+}
+
+.article1-area-usuario {
+    height: auto;
+    width: 45%;
+    margin-right: 0;
+}
+
+.article2-area-usuario {
+    height: auto;
+    width: 55%;
+}
+
+.div1-area-usuario,
+.div2-area-usuario,
+.div3-area-usuario {
+    color: white;
+    background-color: #0b0c10;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+}
+
+.div1-area-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7%;
+}
+
+.foto-perfil-area-usuario {
+    border-radius: 50%;
+    background-color: #1f2833;
+    width: 200px;
+    height: 200px;
+}
+
+.mudar-foto-button,
+.btn-mostrar-mais-area-usuario {
+    height: 35px;
+    width: 30%;
+    border: transparent;
+    color: white;
+    border-radius: 10px;
+    background-color: #1f2833;
+    font-weight: bold;
+}
+
+.div2-area-usuario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.card2-divs-area-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2-info {
+    font-size: 35px;
+    margin: 0;
+}
+
+.div3-area-usuario {
+    padding: 5%;
+}
+
+.table-div3-area-usuario {
+    width: 100%;
+    height: 75%;
+}
+
+th {
+    font-weight: normal;
+}
+
+.div-btn-mostrar-mais-area-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .section-conteudo-area-usuario {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .article1-area-usuario,
+    .article2-area-usuario {
+        width: 100%;
+    }
+
+    .div2-area-usuario {
+        grid-template-columns: 1fr;
+        padding: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-conteudo-area-usuario {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .div1-area-usuario,
+    .div2-area-usuario,
+    .div3-area-usuario {
+        padding: 5%;
+    }
+
+    .card2-info {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .div1-area-usuario,
+    .div2-area-usuario,
+    .div3-area-usuario {
+        padding: 2%;
+    }
+
+    .foto-perfil-area-usuario {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card2-info {
+        font-size: 24px;
+    }
+
+    .mudar-foto-button,
+    .btn-mostrar-mais-area-usuario {
+        width: 50%;
+    }
+}
